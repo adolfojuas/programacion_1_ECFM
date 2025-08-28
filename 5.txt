@@ -1,0 +1,13 @@
+Inicio
+    Declarar numero como entero y binario como cadena
+    Leer numero
+    binario ← ""   
+
+    Mientras numero > 0 hacer
+        residuo ← numero MOD 2
+        binario ← convertir(residuo a texto) + binario
+        numero ← numero DIV 2
+    FinMientras
+
+    Escribir "Representación binaria:", binario
+Fin

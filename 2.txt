@@ -1,0 +1,15 @@
+Inicio
+    Declarar numero y contador como entero
+    Leer numero
+    contador ← 0
+
+    Mientras numero > 0 hacer
+        digito ← numero MOD 10
+        Si digito = 2 O digito = 3 O digito = 5 O digito = 7 Entonces
+            contador ← contador + 1
+        FinSi
+        numero ← numero DIV 10
+    FinMientras
+
+    Escribir "Cantidad de dígitos primos:", contador
+Fin

@@ -1,0 +1,21 @@
+Inicio
+    Declarar num1, num2 y num3 como real
+    Leer num1, num2, num3
+    positivos ← 0
+    negativos ← 0
+    ceros ← 0
+
+    Para cada num en (num1, num2, num3) hacer
+        Si num > 0 entonces
+            positivos ← positivos + 1
+        Sino si num < 0 entonces
+            negativos ← negativos + 1
+        Sino
+            ceros ← ceros + 1
+        FinSi
+    FinPara
+
+    Escribir "Positivos:", positivos
+    Escribir "Negativos:", negativos
+    Escribir "Ceros:", ceros
+Fin

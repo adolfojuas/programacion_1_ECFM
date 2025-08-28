@@ -1,0 +1,38 @@
+Inicio
+    Declarar N como entero y arreglo como entero
+    Leer N  
+    Crear arreglo salarios de tamaño N
+
+    Para i desde 1 hasta N hacer
+        Leer salario
+        salarios[i] = salario
+    FinPara
+
+    // Calcular promedio
+    suma = 0
+    Para i desde 1 hasta N hacer
+        suma = suma + salarios[i]
+    FinPara
+    promedio = suma / N
+
+    // Contar cuántos ganan arriba del promedio
+    contador_arriba = 0
+    Para i desde 1 hasta N hacer
+        Si salarios[i] > promedio entonces
+            contador_arriba = contador_arriba + 1
+        FinSi
+    FinPara
+
+    // Calcular desviación estándar
+    suma_cuadrados = 0
+    Para i desde 1 hasta N hacer
+        diferencia = salarios[i] - promedio
+        suma_cuadrados = suma_cuadrados + diferencia * diferencia
+    FinPara
+    desviacion_estandar = RaízCuadrada(suma_cuadrados / N)
+
+    // Mostrar resultados
+    Imprimir "Salario promedio: ", promedio
+    Imprimir "Cantidad que ganan arriba del promedio: ", contador_arriba
+    Imprimir "Desviación estándar: ", desviacion_estandar
+Fin

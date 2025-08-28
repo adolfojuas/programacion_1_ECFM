@@ -1,0 +1,14 @@
+Inicio
+    Declarar x como real
+    Leer x
+    Si x < 0 entonces
+        f ← x^2
+    Sino 
+	si x ≤ 10 entonces
+       		 f ← 2x + 1
+    	Sino
+        	f ← 3x - 5
+        FinSi
+    Finsi
+    Escribir "f(x) =", f
+Fin
